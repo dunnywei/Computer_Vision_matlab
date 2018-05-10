@@ -8,7 +8,7 @@ im_red=img(:,:,1);
 imshow(im_red); 
 %0:46->bright area shows high red value, darker areas are vice versa
 
-plot(img_red(150,0))
+plot(im_red(150,:))
 %}
 
 
