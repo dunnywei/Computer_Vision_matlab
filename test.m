@@ -1,7 +1,7 @@
 %lecture 31_color_planes
 %https://www.youtube.com/watch?v=dqTtAcljH_8&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm&index=30
 %{
-img=imread('fruit.png')
+img=imread('bowl_fruit.png');
 imshow(img);
 disp(size(img));
 im_red=img(:,:,1);
