@@ -1,3 +1,24 @@
+%lecture 32_add_two_images
+%https://www.youtube.com/watch?v=dqTtAcljH_8&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm&index=30
+%{
+img1=imread('bowl_fruit.png');
+img2=imread('abc.png')
+
+imshow(img1);
+disp(size(img1));
+
+imshow(img2);
+disp(size(img2));
+%need to make sure their size are equal (0:19)
+
+im_red=img(:,:,1);
+imshow(im_red); 
+%0:46->bright area shows high red value, darker areas are vice versa
+
+plot(im_red(150,:))
+%}
+
+
 %lecture 31_color_planes
 %https://www.youtube.com/watch?v=dqTtAcljH_8&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm&index=30
 %{
