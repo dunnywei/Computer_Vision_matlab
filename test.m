@@ -1,4 +1,4 @@
-%lecture 33
+%lecture 34->refer to udacity Lecture 25:Multiplying by a scalar demo
 %https://www.youtube.com/watch?v=dqTtAcljH_8&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm&index=30
 clc;
 clear all;
@@ -32,7 +32,13 @@ imshow(result);
 
 figure;
 imshow(img2);
+%{
+Lecutre 25
+result=value.*img2;
+   %the dot ensure the element wise multiplication (1:26)
+%}
 
+%--------------------------refer to youtube-------------
 %{
 Lecture 33
 -After multiplying 0.5(=dividing by 2), the intensity becomes darker (0:29)
