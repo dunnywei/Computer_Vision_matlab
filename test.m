@@ -6,6 +6,10 @@ close all;
 img1=imread('baboon.bmp');
 img2=imread('bird.gif');
 
+result=scale(img1,img2,0.75);
+figure;
+imshow(result);
+%{
 sum=img1+img2;
 average=img1/2+img2/2;
 average2=(img1+img2)/2;
@@ -32,6 +36,19 @@ imshow(result);
 
 figure;
 imshow(img2);
+%}
+%---------------------refer to udacity------------------
+%{
+Lecture 26
+-Blending effect, we have to make sure the constant 
+of mutliplying two images =1 (0:39) as
+result=0.25*img1+0.75*img2;
+-where 0.75+0.25=1
+-it is a.k.a alpha blending (0:37) in viewing quiz
+
+
+}
+
 %{
 Lecutre 25
 result=value.*img2;
@@ -40,13 +57,17 @@ result=value.*img2;
 
 %--------------------------refer to youtube-------------
 %{
-Lecture 33
+Lecture 33 or Lecture 24 from udacity
 -After multiplying 0.5(=dividing by 2), the intensity becomes darker (0:29)
 -After multiplying 1.5, it becomes brighter. There are wash out effect in
 certain area (0:45)
 -This is due to the image value above 255 is truncated with that limit
 (0:49)(0:52)
 -function (1:20)
+
+-(183/2+152/2)=92+76=168
+-(183+152)/2=335/2 no due to the size limit of 0 to 255 as unsign 8bit integer
+therefore it will be like 255/2 in (viewing quiz)
 %}
 
 
