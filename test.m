@@ -38,6 +38,15 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
+%Lecture 27
+%{
+-We will introduce the concept of noise.
+-Noise is just another function that is comibeind with the original function to get a new function (0:18)
+-I_prime(x,y)=I(x,y)+n(x,y) 
+-Different type of noise
+-Salt and peper noises (0:48)
+%}
+
 %{
 Lecture 26
 -Blending effect, we have to make sure the constant 
