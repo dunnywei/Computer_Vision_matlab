@@ -44,7 +44,17 @@ imshow(img2);
 -Noise is just another function that is comibeind with the original function to get a new function (0:18)
 -I_prime(x,y)=I(x,y)+n(x,y) 
 -Different type of noise
--Salt and peper noises (0:48)
+-Salt and peper noises (0:48)->random occurrences of black and white pixels
+-Impulse noise->random occurance of white pixel (1:04)
+-Gaussian noise->variation in intensity drawn from the gausian normal distribution (1:13)
+   -we basically assume that at every pixel we take the original image and stick to another spot is distributed
+   from normal or guassian distribution (1:29)  
+-Gaussian noise in matlab->
+noise=randn(size(im)).*sigma (1:40)
+output=img+noise (2:16)
+-noise with the mean of 0 standard deviation of 1->1:59
+-scale by sigma that will spread out and make it bigger (2:04)
+-
 %}
 
 %{
