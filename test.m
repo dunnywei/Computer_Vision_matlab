@@ -46,8 +46,12 @@ result=0.25*img1+0.75*img2;
 -where 0.75+0.25=1
 -it is a.k.a alpha blending (0:37) in viewing quiz
 
+in quiz->
 
-}
+function output = blend(a, b, alpha)
+    output = alpha.*a+(1-alpha).*b;
+endfunction
+
 
 %{
 Lecutre 25
