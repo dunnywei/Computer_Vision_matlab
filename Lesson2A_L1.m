@@ -38,7 +38,18 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
-%Lecture 27
+%Lecture 28:Image diference Demo
+%{
+-Greater value in the difference image signify greater difference between two images (0:16)
+-
+%}
+%Code
+%{
+dolphin=imread('dolphin.png');
+bicycle=imread('bicycle.png');
+diff=dolphin-bycyle;
+%}
+%Lecture 27:Common Type of Noise
 %{
 -We will introduce the concept of noise.
 -Noise is just another function that is comibeind with the original function to get a new function (0:18)
