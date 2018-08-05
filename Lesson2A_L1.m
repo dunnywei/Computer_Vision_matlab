@@ -49,6 +49,9 @@ difference but only the magnitude (1:04)=We are interested in the absolute diffe
 (1:11)
 -So let's see the values being subtracted (1:35)
 ->20(from bicycle) - 56 (dolphin) (1:38)
+->theoretically, the result should be -36 (1:43)
+->since we are using unit8 so this number can only be represented as 0 to 255 since it is unsigned (1:49)
+->so it is truncated to 0 (1:53)
 %}
 %Code
 %{
