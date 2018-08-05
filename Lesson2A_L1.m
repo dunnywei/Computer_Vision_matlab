@@ -44,14 +44,22 @@ imshow(img2);
 -Bright area indicates where two images varing more (0:21)
 -if we swtich order as diff=bicyle-dlphin; the result will be diiferent->SO order matter (0:26)
 -since a-b vs b-a will be different (0:47)
--
+-When we talking about the difference between two images, we don't care care about the sign of the
+difference but only the magnitude (1:04)=We are interested in the absolute difference between two images
+(1:11)
+-So let's see the values being subtracted (1:35)
+->20(from bicycle) - 56 (dolphin) (1:38)
 %}
 %Code
 %{
 dolphin=imread('dolphin.png');
 bicycle=imread('bicycle.png');
 diff=dolphin-bycyle;
+imshow(diff);
+abs_diff=abs(dolphin-bycyle);
+imshow(abs_diff);
 %}
+
 %Lecture 27:Common Type of Noise
 %{
 -We will introduce the concept of noise.
