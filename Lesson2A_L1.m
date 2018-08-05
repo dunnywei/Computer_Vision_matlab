@@ -41,6 +41,9 @@ imshow(img2);
 %Lecture 28:Image diference Demo
 %{
 -Greater value in the difference image signify greater difference between two images (0:16)
+-Bright area indicates where two images varing more (0:21)
+-if we swtich order as diff=bicyle-dlphin; the result will be diiferent->SO order matter (0:26)
+-since a-b vs b-a will be different (0:47)
 -
 %}
 %Code
