@@ -38,6 +38,16 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
+%Lecture 29:Image diference quiz
+%{
+
+%}
+%code
+%{
+
+%}
+
+
 %Lecture 28:Image diference Demo
 %{
 -Greater value in the difference image signify greater difference between two images (0:16)
@@ -52,6 +62,10 @@ difference but only the magnitude (1:04)=We are interested in the absolute diffe
 ->theoretically, the result should be -36 (1:43)
 ->since we are using unit8 so this number can only be represented as 0 to 255 since it is unsigned (1:49)
 ->so it is truncated to 0 (1:53)
+->Even in the absolute difference case, the subtraction is performed first (1:59)
+->So the intermediate result will be the same as the original difference (2:04)
+->The number is truncated already so the absolute value operator won't make any difference (2:09)
+->So we will see what we can do about this in nect section
 %}
 %Code
 %{
