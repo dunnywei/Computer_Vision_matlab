@@ -41,37 +41,39 @@ imshow(img2);
 %Lecture 29:Image diference quiz
 %Lecture
 %{
-z=abs(abs(y)-abs(x)) 
+1)z=abs(abs(y)-abs(x)) 
 %Doens't make any difference since a and b are +ve integers anyway so give us the previous result(0:09)
-
+2)(a-b)+(b-a)
+%gives +ve value for a >B or 0 if b<a (0:20) for a-b
+%(b-a) will be vice versa (0:27)
+3)convert to uint16
+%It is still an unsigned value so doesn't make any differene (0:50)
+4)convert to floating point
+Yes it works(0:52) since it can store -ve value 
 %}
 %code
 %{
 clc;
 clear all;
 close all;
-%y=uint8(20);
-%x=uint8(56);
 
-y=uint16(20);
-x=uint16(56);
 
-%z=y-x %fail
-%z=abs(abs(y)-abs(x)) %fail
-z=(y-x)+(x-y) %THIS WORK
+dolphin=imread('dolphin.png');
+bicycle=imread('bicycle.png');
+diff=dolphin-bycyle;
+imshow(diff);
+abs_diff=abs(dolphin-bycyle);
+imshow(abs_diff);
+
+%we can use image package to preserve the value
+
+pkg load; %(1:19)
+
+abs_diff2=imabsdiff(dolphin-bycyle) %(1:33)
+imshow(abs_diff2); 
+
 %}
 
-%{
-%change to unsigned 16 bit->fail
-clc;
-clear all;
-close all;
-
-y=uint16(20);
-x=uint16(56);
-
-z=y-x %fail
-%}
 
 
 
