@@ -42,6 +42,9 @@ imshow(img2);
 %{
 -Since these are randon numbers, we calles this as the noise (0:51)
 -randn draws the gausssian or a random normal distribution (0:58)
+-Gaussian distrubtion
+   -The center or mean for randn is zero the standard deviation is one (1:10)
+   -Standard deviation is a measure for how spread out the distribtuion it is (1:19)
 %}
 %code
 %{
