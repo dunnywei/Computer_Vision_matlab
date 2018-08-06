@@ -40,7 +40,8 @@ imshow(img2);
 %---------------------refer to udacity------------------
 %Lecture 30:Generate Gaussian noise
 %{
-
+-Since these are randon numbers, we calles this as the noise (0:51)
+-randn draws the gausssian or a random normal distribution (0:58)
 %}
 %code
 %{
