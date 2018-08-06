@@ -39,13 +39,40 @@ imshow(img2);
 %}
 %---------------------refer to udacity------------------
 %Lecture 29:Image diference quiz
+%Lecture
 %{
+z=abs(abs(y)-abs(x)) 
+%Doens't make any difference since a and b are +ve integers anyway so give us the previous result(0:09)
 
 %}
 %code
 %{
+clc;
+clear all;
+close all;
+%y=uint8(20);
+%x=uint8(56);
 
+y=uint16(20);
+x=uint16(56);
+
+%z=y-x %fail
+%z=abs(abs(y)-abs(x)) %fail
+z=(y-x)+(x-y) %THIS WORK
 %}
+
+%{
+%change to unsigned 16 bit->fail
+clc;
+clear all;
+close all;
+
+y=uint16(20);
+x=uint16(56);
+
+z=y-x %fail
+%}
+
 
 
 %Lecture 28:Image diference Demo
