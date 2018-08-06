@@ -45,8 +45,24 @@ imshow(img2);
 -Gaussian distrubtion
    -The center or mean for randn is zero the standard deviation is one (1:10)
    -Standard deviation is a measure for how spread out the distribtuion it is (1:19)
+   -Getting the number close to 0 will be likely (1:27)
+   -Getting the number far away from 0 will be less likely(1:31)
+   -How do we know if the randn is sampling from Gaussian Distributin (1:36)?
+   -If we have enough samples among bins and we counted how many numbers landed in each bin (1:40)
+   -We will see a pattern simliar to the probably distribution (1:48)
+   -See code2 (1:52)
 %}
-%code
+
+%code2
+%{
+
+some_matrix=randn([1 100]);%1 row and 5 columns (0:37)
+display(some_matrix); (0:46)
+
+%}
+
+
+%code1
 %{
 %generate gausian noise %(0:03)
 %randn()
