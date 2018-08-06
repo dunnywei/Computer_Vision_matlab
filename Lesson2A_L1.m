@@ -44,7 +44,14 @@ imshow(img2);
 %}
 %code
 %{
+%generate gausian noise %(0:03)
+%randn()
 
+some_number=randn();
+display(some_number); %(0:09)
+
+some_matrix=randn([1 5]);%1 row and 5 columns (0:37)
+display(some_matrix); (0:46)
 
 %}
 
