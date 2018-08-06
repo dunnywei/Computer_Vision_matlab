@@ -51,14 +51,27 @@ imshow(img2);
    -If we have enough samples among bins and we counted how many numbers landed in each bin (1:40)
    -We will see a pattern simliar to the probably distribution (1:48)
    -See code2 (1:52)
+   -see code3 for more bins (3:06)
 %}
+%code3
+%{
 
+some_matrix=randn([1 100]);
+[n,x]=hist(some_matrix, linspace(-3,3,7)); %(3:17)
+display(x: n); 
+plot(x,n);
+%}
 %code2
 %{
 
-some_matrix=randn([1 100]);%1 row and 5 columns (0:37)
-display(some_matrix); (0:46)
-
+some_matrix=randn([1 100]);
+[n,x]=hist(some_matrix, [-3 -2 -1 0 1 2 3]);
+%n=# of elements
+%x=bin center
+display(x: n); (2:32)
+%center has the high count and low count in the end(2:41) or zero count in the end (2:42)
+%Same behavior will occur no matter how many times you run it (2:44)
+plot(x,n);
 %}
 
 
