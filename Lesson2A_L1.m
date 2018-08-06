@@ -38,8 +38,19 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
+%Lecture 30:Generate Gaussian noise
+%{
+
+%}
+%code
+%{
+
+
+%}
+
+
+
 %Lecture 29:Image diference quiz
-%Lecture
 %{
 1)z=abs(abs(y)-abs(x)) 
 %Doens't make any difference since a and b are +ve integers anyway so give us the previous result(0:09)
