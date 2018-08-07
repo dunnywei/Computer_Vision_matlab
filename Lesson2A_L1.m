@@ -38,10 +38,12 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
-%Lecture 31:Quiz_Generate Gaussian noise
+%Lecture 32_effect of sigma in Gaussian noise
 %{
-
+-magnitude of noise is defined by sigma (0:08)
+-We only look at the function of noise and ignore the image (0:15)
 %}
+%Lecture 31:Quiz_Generate Gaussian noise
 %code
 %{
 % Generate Gaussian noise
