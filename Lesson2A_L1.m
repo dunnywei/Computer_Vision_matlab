@@ -38,6 +38,15 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
+%Lecture 31:Quiz_Generate Gaussian noise
+%{
+
+%}
+%code
+%{
+
+%}
+
 %Lecture 30:Generate Gaussian noise
 %{
 -Since these are randon numbers, we calles this as the noise (0:51)
