@@ -47,6 +47,10 @@ imshow(img2);
 -Mean is 0. Some of the value will be +ve and some of the values will be -ve (0:30)
 -How do we see the images has +ve and -ve value.
 -If we say 0 is black and white is 255. How do we do this ? (0:40)
+-Instead of saying "zero is black" we will map some minimum value as black (0:51) and some maximum value to white (0:54)then
+we will distribute in between (0:56)
+-0 should be gray instead of black (1:07)
+-so we have value of -20 to +20 in the image (1:11)
 %}
 %Lecture 31:Quiz_Generate Gaussian noise
 %code
