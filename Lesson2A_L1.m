@@ -44,6 +44,22 @@ imshow(img2);
 %}
 %code
 %{
+% Generate Gaussian noise
+noise = randn([1 10000]);
+[n x] = hist(noise, linspace(-3, 3, 21));
+figure;
+plot(x, n);
+
+% Generate Uniform noise
+noise = rand([1 10000]);
+[n x] = hist(noise, linspace(-1, 1, 21));
+%disp([x; n]);
+figure;
+plot(x, n);
+
+% TODO: Try generating other kinds of random numbers.
+%       How about a 2D grid of random Gaussian values?
+
 
 %}
 
