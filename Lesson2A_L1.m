@@ -51,13 +51,42 @@ imshow(img2);
    -If we have enough samples among bins and we counted how many numbers landed in each bin (1:40)
    -We will see a pattern simliar to the probably distribution (1:48)
    -See code2 (1:52)
-   -see code3 for more bins (3:06)
+   -see code3 for more bins (3:06)->bin center is the same as expected (3:27)
+   -see code4->for bette resolution around x axis (3:45) due to spikese we need more data
+   -see code5 (3:51)->more data/more sample (4:01)
+   -In addition to randn, we can find rand(4:14)-> for uniform distribution
+                                      randi(4:19)->generate random integers (4:19)  
 %}
+%code5
+%{
+
+some_matrix=randn([1 10000]);
+[n,x]=hist(some_matrix, linspace(-3,3,21));  
+
+display(x: n); 
+plot(x,n);
+%}
+
+
+%code4
+%{
+
+some_matrix=randn([1 100]);
+[n,x]=hist(some_matrix, linspace(-3,3,21));  
+%Why there is a spike? (3:48) solution, we need more data
+
+display(x: n); 
+plot(x,n);
+%}
+
+
 %code3
 %{
 
 some_matrix=randn([1 100]);
-[n,x]=hist(some_matrix, linspace(-3,3,7)); %(3:17)
+[n,x]=hist(some_matrix, linspace(-3,3,7)); %(3:17) 
+%7 different numbers including zero for linespace (3:21)
+
 display(x: n); 
 plot(x,n);
 %}
