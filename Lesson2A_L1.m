@@ -42,6 +42,11 @@ imshow(img2);
 %{
 -magnitude of noise is defined by sigma (0:08)
 -We only look at the function of noise and ignore the image (0:15)
+-We can't do it yet until making up the decision.
+-What's the mean of the noise? (0:22)
+-Mean is 0. Some of the value will be +ve and some of the values will be -ve (0:30)
+-How do we see the images has +ve and -ve value.
+-If we say 0 is black and white is 255. How do we do this ? (0:40)
 %}
 %Lecture 31:Quiz_Generate Gaussian noise
 %code
