@@ -51,6 +51,13 @@ imshow(img2);
 we will distribute in between (0:56)
 -0 should be gray instead of black (1:07)
 -so we have value of -20 to +20 in the image (1:11)
+-we can make -20 as black and +20 as white, and 0 as gray (1:15)
+->In matlab, th code will be like this (1:19)
+noise=randn(size(im)).*sigma;
+->If there is a really small sigma, you can barely see due to the constant gray
+->if we make sigma becomes greater and greter, we see more speckle (1:41)
+->it is an effect of the noise function been added to the image (1:44)
+
 %}
 %Lecture 31:Quiz_Generate Gaussian noise
 %code
@@ -71,6 +78,14 @@ plot(x, n);
 % TODO: Try generating other kinds of random numbers.
 %       How about a 2D grid of random Gaussian values?
 
+
+%}
+%Lecture 30:quiz_Generate Gaussian noise
+%{
+
+%}
+%code
+%{
 
 %}
 
