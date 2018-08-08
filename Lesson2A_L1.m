@@ -40,7 +40,17 @@ imshow(img2);
 %---------------------refer to udacity------------------
 %Lecture 34_quiz_effect of sigma in Gaussian noise
 %{
+Q:
+noise = randn(size(img)).*2; %as gaussian distribution
+If we have .*2 instead of *1 what will happen?
+1)Does this increase the count?
+2)Does this increase the spread?
+3)Does this increase the both
 
+-The only correct answer is that we increase the spread by increasing the sigma (0:03)
+-The number of values or their counts AREN'T changed (0:11)
+-Mutiplying a number will change the standard deviation they were drawn from (0:19)
+-
 %}
 %code
 %{
