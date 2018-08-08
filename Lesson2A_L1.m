@@ -38,6 +38,19 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
+%Lecture 34_quiz_effect of sigma in Gaussian noise
+%{
+
+%}
+%code
+%{
+
+%}
+%Lecture 33_quiz_effect of sigma in Gaussian noise
+%{
+%pass the quiz
+%}
+
 %Lecture 32_effect of sigma in Gaussian noise
 %{
 -magnitude of noise is defined by sigma (0:08)
