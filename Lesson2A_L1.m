@@ -38,6 +38,19 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
+%Lecture 35_displaying images in matlab
+%{
+
+%}
+%code
+%{
+
+
+%}
+
+
+
+
 %Lecture 34_quiz_effect of sigma in Gaussian noise
 %{
 Q:
@@ -53,6 +66,8 @@ If we have .*2 instead of *1 what will happen?
 -The type of variable we are using is unint8 spanned from 0 to 255 (0:32)
 -IN the imge of saturn, we should see three moons and shadow. After we add the noise, we didn't see any change.
 -The reason is that the the noise after randn is really small compare to the image (1:05)
+-After implemeint the "Code 2". We can see the effect of the image (1:11)
+-After increase the "noise=randn(size(imag)).*50" it will be really difficult to see the moon
 %}
 %code 2
 %{
