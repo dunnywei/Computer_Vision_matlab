@@ -49,12 +49,28 @@ If we have .*2 instead of *1 what will happen?
 
 -The only correct answer is that we increase the spread by increasing the sigma (0:03)
 -The number of values or their counts AREN'T changed (0:11)
--Mutiplying a number will change the standard deviation they were drawn from (0:19)
--
+-Mutiplying a number will change the standard deviation (sigma) they were drawn from (0:19)
+-The type of variable we are using is unint8 spanned from 0 to 255 (0:32)
+-IN the imge of saturn, we should see three moons and shadow. After we add the noise, we didn't see any change.
+-The reason is that the the noise after randn is really small compare to the image (1:05)
 %}
-%code
+%code 2
 %{
+img=imgread('saturn.png');
+imsho(img);
+noise=randn(size(imag)).*25;%scale up the avlue (1:07)
+outpu=img+noise;
+imshow(output);
+%}
 
+
+%code 1
+%{
+img=imgread('saturn.png');
+imsho(img);
+noise=randn(size(imag));
+outpu=img+noise;
+imshow(output);
 %}
 %Lecture 33_quiz_effect of sigma in Gaussian noise
 %{
