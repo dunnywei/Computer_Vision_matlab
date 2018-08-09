@@ -40,7 +40,8 @@ imshow(img2);
 %---------------------refer to udacity------------------
 %Lecture 35_displaying images in matlab
 %{
-
+-image may go from 0 to 1 (0:11). It means that it goes from darkest black to brightes white (0:14)
+-Then I have the the sigma of 2(0:17), u will see black and white all over the place (0:12)
 %}
 %code
 %{
