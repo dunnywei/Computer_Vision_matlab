@@ -42,7 +42,9 @@ imshow(img2);
 %{
 -image may go from 0 to 1 (0:11). It means that it goes from darkest black to brightes white (0:14)
 -Then I have the the sigma of 2(0:17), u will see black and white all over the place (0:12)
--In the previous example of Lecture 34, sigma here is a small variation (0:24)
+-In the previous example of Lecture 34, sigma here is a small variation (0:24)where sigma 64 is a big variation (0:26) Why?
+   -In the image, -127 is black and +128 is white (0:35). 
+-When we talk about amount of noise in terms of intensity (0:41), we need to consider the overall range (0:45)
 -
 %}
 %code
