@@ -45,7 +45,7 @@ imshow(img2);
 -In the previous example of Lecture 34, sigma here is a small variation (0:24)where sigma 64 is a big variation (0:26) Why?
    -In the image, -127 is black and +128 is white (0:35). 
 -When we talk about amount of noise in terms of intensity (0:41), we need to consider the overall range (0:45)
--
+-We should use double while dealing with sigma so we can let it equal to 0.1 so it is 10th of range from black to white (0:59)
 %}
 %code
 %{
