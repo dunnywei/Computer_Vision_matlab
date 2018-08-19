@@ -46,6 +46,8 @@ imshow(img2);
    -In the image, -127 is black and +128 is white (0:35). 
 -When we talk about amount of noise in terms of intensity (0:41), we need to consider the overall range (0:45)
 -We should use double while dealing with sigma so we can let it equal to 0.1 so it is 10th of range from black to white (0:59)
+-Need to use floating point number for 0.0 to 255.0 (1:06)
+-sigma .1 in one place will be the sigma of 25 in another case due to streching out(1:17)
 %}
 %code
 %{
