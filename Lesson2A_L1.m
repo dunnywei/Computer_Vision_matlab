@@ -38,6 +38,14 @@ figure;
 imshow(img2);
 %}
 %---------------------refer to udacity------------------
+%Lecture 36_adding noise quiz
+%{
+
+%}
+%code
+%{
+
+%}
 %Lecture 35_displaying images in matlab
 %{
 -image may go from 0 to 1 (0:11). It means that it goes from darkest black to brightes white (0:14)
@@ -48,7 +56,14 @@ imshow(img2);
 -We should use double while dealing with sigma so we can let it equal to 0.1 so it is 10th of range from black to white (0:59)
 -Need to use floating point number for 0.0 to 255.0 (1:06)
 -sigma=.1 in one place will be the sigma=25 in another case due to streching out(1:17)
--We have to worry about the signma w.r.t the overall range of your image (1:21)
+-We have to worry about the magnitude of signma w.r.t the overall range of your image (1:21)
+imshow(im,[low high]);
+-low as black and high as white (1:23)
+imshow(im,[]);
+-scale the image automatically for you (2:01)
+   -it will find the minimum as black and max as white (2:04) by scaling
+-You ONLY normalize to display it (2:45) NOT to compute/processing it (2:46)
+-
 %}
 %code
 %{
