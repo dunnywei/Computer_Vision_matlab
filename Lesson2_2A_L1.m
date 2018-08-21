@@ -1,3 +1,5 @@
+%Lesson2_2A_L1_Image as a function
+
 %lecture 34->refer to udacity Lecture 25:Multiplying by a scalar demo
 %https://www.youtube.com/watch?v=dqTtAcljH_8&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm&index=30
 clc;
