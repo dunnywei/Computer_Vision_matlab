@@ -21,7 +21,8 @@
 ----------------------------------------------------
 %Lecture 2_Averaging assumption
 %{
-   
+  -We are taking about the average from [10 to 20] so what assumption are we making about the picture ?(0:23)
+  -
 %}
 %code
 %{
