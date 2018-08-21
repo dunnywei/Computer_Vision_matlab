@@ -8,9 +8,24 @@
    -replace the value of the pixel with the average around it (0:52)
    -First ateemp at a solution in 1D (1:03)(1:12)
     -replace each pixel with an average of all the values in its neighborhood->a moving average (1:12)
+    -Given [1...N] with various pulse
+      -for [10 to 20] is replaced the average of 10 to 20 (1:22)
+      -At the end, I will get sth smoother than the original (1:31)
+      -Sommoth means that we average the values locally (done)
 %}
 %code
 %{
    noise=randn(size(im)).*sigma;
    output=im+noise;
 %}
+----------------------------------------------------
+%Lecture 2_Averaging assumption
+%{
+   
+%}
+%code
+%{
+   noise=randn(size(im)).*sigma;
+   output=im+noise;
+%}
+
