@@ -1,5 +1,5 @@
 %Lesson3_2A_L2_Filtering
-%Lecture 1_Gaussian Noise
+%Lecture 2_Gaussian Noise
 %{
    -we have to worry about the sigma w.r.t the range of the image (0:18)
    -if the range of image is 0 to 255, sigma 5 is possible (0:23)
@@ -19,10 +19,18 @@
    output=im+noise;
 %}
 ----------------------------------------------------
-%Lecture 2_Averaging assumption
+%Lecture 3_Averaging assumption
 %{
   -We are taking about the average from [10 to 20] so what assumption are we making about the picture ?(0:23)
-  -
+  -Assumpption
+   ** 1)The real/true value of pixels are similar to the true value of pixels nearby (0:34)
+   ** 2)Each noise added to each pixel is done independently(0:58)
+      -Sometimes the noise is up and sometimes is done so if I take the average, I will get 0 (1:10)
+%}
+----------------------------------------------------
+%Lecture 4_noise quiz
+%{
+
 %}
 %code
 %{
