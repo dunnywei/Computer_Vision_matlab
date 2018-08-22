@@ -30,8 +30,18 @@
 ----------------------------------------------------
 %Lecture 4_noise quiz
 %{
-
+-Q:If noise is just a function added to an images, we could remove the noise by subtraccting the noise again. This is the operation reversible
+    b)True but we dno't know the noise function so we can't actually do the subraction.
+ -We only the statistic of the noise (0:17)
+    c)False. Additive noise destroys the information in the image->Not true. If we only have the addition of the noise(really tiny) and result 
+  between modified image with noise (0:27) and the orignal image are almost the same->This statement is wrong
+-If we have a limit of [0 to 255] or [0 to 1], if the noise push you beyond the limit, so you clip. THEN we lost the info (0:40)
+  -Sometimes when you add the noise, you lost the linearity (0:44).
+ -In general, We can't remove the noise since we don't know what it was (0:49). If we know it, we can sutract (0:51)
 %}
+-----------------------------------------------------
+%Lecture 5_weighted moving average
+
 %code
 %{
    noise=randn(size(im)).*sigma;
