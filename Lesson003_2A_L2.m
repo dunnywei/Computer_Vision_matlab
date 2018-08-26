@@ -41,7 +41,14 @@
 %}
 -----------------------------------------------------
 %Lecture 5_weighted moving average
-
+ -Let's revisit our weighted average
+ -Instead of averaging the local pixelm Let's think it as the set of weight (0:14)
+ -We are going to weight the pixel by some sets of weight from [10 to 20] (0:19)
+ -We will combine with weight to come up a new value (0:23)
+ -If all window are 5th long so we will weight [1/5 1/5 1/5 1/5 1/5] (0:33) so it will be uniformlly distributed (0:35)
+->
+ -Our assumption is nearby pixels are related to my value (0:43)
+ -The more nearby you are, the more related you are (0:50)
 %code
 %{
    noise=randn(size(im)).*sigma;
