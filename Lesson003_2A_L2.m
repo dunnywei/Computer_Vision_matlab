@@ -47,11 +47,21 @@
  -We will combine with weight to come up a new value (0:23)
  -If all window are 5th long so we will weight [1/5 1/5 1/5 1/5 1/5] (0:33) so it will be uniformlly distributed (0:35)
 ->
- -Our assumption is nearby pixels are related to my value (0:43)
- -The more nearby you are, the more related you are (0:50)
+ -**Our assumption is nearby pixels are related to my value (0:43)
+ -**The more nearby you are, the more related you are (0:50)
+ -The pixel cloed to me should contribute more to the average (0:54)
+ -So we choose [1,4,6,4,1]/16 (1:06) as the non-uniform weight (1:12)
+ -Change from uniform to non-uniform (1:20)
+ -Non-Uniform is smoother than the uniform (1:33)
+ -Non-Uniform weight corresponding to the assumption of more nearby pixel
+ it is, more weight it should be (1:49)
+ 
 %code
 %{
    noise=randn(size(im)).*sigma;
    output=im+noise;
 %}
+--------------------------------------------
+%Lecture 6_moving average quiz
+
 
