@@ -63,5 +63,11 @@
 %}
 --------------------------------------------
 %Lecture 6_moving average quiz
+To do the moving average compuation, the # of weight should be 
+1)odd->makes i teasier to have a midle pixel
+     -A:PUt my set of weight on the center of tover the pixel that I am going to change (0:11). 
+Otherwise, we need to put it bettween the set of weights and average them that way
+We tends to use odd symmetric weight mask.
 
-
+--------------------------------------------
+%Lecture 7_compare filter results
