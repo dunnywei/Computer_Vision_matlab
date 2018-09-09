@@ -71,3 +71,28 @@ We tends to use odd symmetric weight mask.
 
 --------------------------------------------
 %Lecture 7_compare filter results
+->Q:10 random intergers and plot them in a line plot  (0:10).Then filter the vector with a uniform filter
+   of length five and plot the result.
+   -also do the same with a non-uniform weighted filter
+->Answer
+  -Blue line is oritinal since it has the biggest extreme
+  
+  -green is uniform filter. In the third to  fourth point, the slope of original one decreased
+   alot but the one in green increase a little (0:16).
+    -the slope of fifth to sixth  in blue increase but the green one decresead(dip)
+    -***THis indicates values other than central value at each point affecting the results too much. (0:26)
+    -***Looking at the the first unusual spike at 4th one(0:30) in greeb, it seems that the peaks on both sides
+    are contributing as much as the central value(0:33) (??)
+    -goes through Lecture 5 again (Starts here)
+  -pink is  
+    -un-uniform weight [1 4 6 4 1]/16
+->original  [7  , 10,  5,  1    ,    4,  8,    4,    4,   5,   5]
+-            1st  2nd 3rd  4th      5th 6th    7th  8th  9th, 10th
+result green[4  ,  5,  5  ,6    ,    5, 4,     5,   and so on   ]
+    -
+ 
+ 
+ 
+ 
+ 
+ 
