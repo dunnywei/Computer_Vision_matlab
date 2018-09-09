@@ -82,7 +82,7 @@ We tends to use odd symmetric weight mask.
     -the slope of fifth to sixth  in blue increase but the green one decresead(dip)
     -***THis indicates values other than central value at each point affecting the results too much. (0:26)
     -***Looking at the the first unusual spike at 4th one(0:30) in green, it seems that the peaks on both sides
-    are contributing as much as the central value of the window[1 1 1 1 1](0:33)
+    are contributing as much as the central value of the window[1 1 1 1 1]/5(0:33)
     -slide 9 of link-> https://www.slideshare.net/gichelleamon/5-spatial-filtering-p1
      or https://www.markschulze.net/java/meanmed.html
      or https://imagelpcmatlab.blogspot.com/2014/06/how-to-apply-average-filter-weighted.html
