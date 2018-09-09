@@ -81,15 +81,20 @@ We tends to use odd symmetric weight mask.
    alot but the one in green increase a little (0:16).
     -the slope of fifth to sixth  in blue increase but the green one decresead(dip)
     -***THis indicates values other than central value at each point affecting the results too much. (0:26)
-    -***Looking at the the first unusual spike at 4th one(0:30) in greeb, it seems that the peaks on both sides
-    are contributing as much as the central value(0:33) (??)
-    -goes through Lecture 5 again (Starts here)
+    -***Looking at the the first unusual spike at 4th one(0:30) in green, it seems that the peaks on both sides
+    are contributing as much as the central value of the window[1 1 1 1 1](0:33)
+    -slide 9 of link-> https://www.slideshare.net/gichelleamon/5-spatial-filtering-p1
+     or https://www.markschulze.net/java/meanmed.html
+     or https://imagelpcmatlab.blogspot.com/2014/06/how-to-apply-average-filter-weighted.html
   -pink is  
     -un-uniform weight [1 4 6 4 1]/16
+    -uniform is [1 1 1 1 1]/5
 ->original  [7  , 10,  5,  1    ,    4,  8,    4,    4,   5,   5]
 -            1st  2nd 3rd  4th      5th 6th    7th  8th  9th, 10th
 result green[4  ,  5,  5  ,6    ,    5, 4,     5,   and so on   ]
-    -
+    -at 4th point (10+5+1+4+8)/5=5.6
+result of red
+    -at 4th point (10*1+5*4+1*6+4*4+8*1)/16=3.75
  
  
  
