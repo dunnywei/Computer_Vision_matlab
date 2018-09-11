@@ -91,10 +91,18 @@ We tends to use odd symmetric weight mask.
     -uniform is [1 1 1 1 1]/5
 ->original  [7  , 10,  5,  1    ,    4,  8,    4,    4,   5,   5]
 -            1st  2nd 3rd  4th      5th 6th    7th  8th  9th, 10th
-result green[4  ,  5,  5  ,6    ,    5, 4,     5,   and so on   ]
+result green[4  ,  5,  5  ,6    ,    5, 4,     5,   and so on   ]->uniform
     -at 4th point (10+5+1+4+8)/5=5.6
-result of red
+result of red->(non-uniform)
     -at 4th point (10*1+5*4+1*6+4*4+8*1)/16=3.75
+->Red line is more smooth. Beside, more importanlty, its peak and troughs are well-alligned with the original (0:46)
+   -Since the central value has more weights comparing to the neighbor values (0:52)
+   -So the pink/red line is the result of applying the center weighted filter (0:57)
+->When we apply the filter, we want to scale the weights so they sum to one (1:02)
+   -FOr uniform filter, it is divide by 5.
+   -For non-uniform filter, it is divde by 16 
+--------------------------------------------
+%Lecture 8_Moving average in 2D
  
  
  
